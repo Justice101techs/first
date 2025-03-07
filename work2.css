@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+.pixel {
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.icons ul {
+    background-color: white;
+}
+
+.icons li a {
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    color: black;
+    font-size: 15px;
+}
+
+header ul {
+    width: 100%;
+    height: 50px;
+    background-color: orangered;
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+    color: white;
+}
+
+.guide {
+    display: flex;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.shuffle {
+    padding-left: 40%;
+    color: white;
+}
+
+main {
+    width: 100%;
+    min-height: 400px;
+    padding: 5px;
+    margin: 10px 0px 10px;
+}
+
+main aside {
+    display: flex;
+    gap: 9px;
+
+}
+
+img {
+    height: 250px;
+    margin-left: 8px;
+}
+
+.reccommend-btn {
+    width: 9%;
+    height: 15px;
+    position: absolute;
+    bottom: 28%;
+    left: 34%;
+    color: transpar;
+    font-size: 55%;
+    padding-right: 7px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+.featured img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.featured-text h2 {
+    font-size: 10px;
+}
+
+.featured-text p{
+    color: black;
+    font-size: 10px;
+}
+p a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.article {
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 2px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+    gap: 55px;
+}
+
+.article h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.article p {
+    font-size: 14px;
+    color: #666;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: orangered;
+    padding: 50px;
+    color: black;
+}
+footer .cover{
+display: flex;
+justify-content: space-between;
+margin: 2px 0;
+}
+footer p{
+    font-size: 14px;
+}
+footer .cover ul li{
+    list-style-type: circle;
+}
+footer .cover ul li a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+footer nav{
+    height: 35%;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+footer nav span{
+    font-size: 12px;
+}
+@media only screen and (max-width:480px)
+{
+header .guide{
+    margin-right: 10px;
+    display: block;
+}
+header.guide li a{
+    background-color: black;
+    margin-right: 0;
+}
+.icons ul {
+    background-color: black;
+}
+
+.icons li a {
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    color: black;
+    font-size: 15px;
+}
+.reccommend-btn {
+    width: 9%;
+    height: 15px;
+    position: absolute;
+    bottom: 28%;
+    left: 34%;
+    color: transpar;
+    font-size: 55%;
+    padding-right: 7px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+    color: black;
+    border-radius: 5px;
+}
+img{
+    height: 200px;
+}
+main aside{
+    flex-direction: column;
+}
+main section .articles .article{
+    grid-template-columns: 90%;
+    grid-gap: 10px;
+}
+}
